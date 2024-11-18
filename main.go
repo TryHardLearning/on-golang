@@ -63,7 +63,7 @@ func main() {
 	r.HandleFunc("/employee", employeeService.GetAllEmployee).Methods(http.MethodGet)
 	r.HandleFunc("/employee/{id}", employeeService.UpdateEmployeeById).Methods(http.MethodPut)
 	r.HandleFunc("/employee/{id}", employeeService.DeleteEmployeeById).Methods(http.MethodDelete)
-	r.HandleFunc("/employee", employeeService.DeleteAllEmployee).Methods(http.MethodDelete) // Alterado para DELETE (não POST)
+	r.HandleFunc("/employee", employeeService.DeleteAllEmployee).Methods(http.MethodDelete)
 
 	// Inicia o servidor
 	log.Println("server is running on :4444")

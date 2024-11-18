@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 	"rest-api/model"
-	"rest-api/repository" // Certifique-se de importar o pacote repository corretamente
+	"rest-api/repository"
 
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
